@@ -170,6 +170,7 @@
         aside{
             p, strong{
                 width: 90%;
+                z-index: 999;
             }
         }
     }   
@@ -216,6 +217,7 @@
 }
 @media (max-width: 580px){
     #page-auth{
+        height: 100vh;
         aside{
             flex: 6;
             padding: 122px 12px;
@@ -242,10 +244,9 @@
             text-align: center;
             p, strong{
                 width: 80vw; 
-                z-index: 999;
             }
             strong{
-                padding-bottom:280px;
+                padding-top:270px;
             }
             p{
                 margin-top: 0px;
@@ -261,6 +262,9 @@
             .main-content{
                 width: 210px;
                 margin: 40px 0 70px 0;
+            }
+            .main-content.newRoom{
+                margin: 100px 0 70px 0;
             }
         }
     }   

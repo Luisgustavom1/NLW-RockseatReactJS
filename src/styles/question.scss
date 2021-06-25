@@ -80,3 +80,19 @@
         }
     }
 }
+@media (max-width: 430px) {
+    .question{
+        .user-info{
+            span{
+                width: 20px;
+            }
+        }
+        .icones{
+            button{
+                img{
+                    width: 20px;
+                }
+            }
+        }
+    }
+}

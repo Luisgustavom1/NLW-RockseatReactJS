@@ -8,8 +8,8 @@ import { Question } from '../components/question'
 import { useRoom } from '../hooks/useRoom'
 import { database } from '../services/firebase'
 // import useAuth from '../hooks/useAuth'
+import toast, { Toaster } from 'react-hot-toast'
 
-import  { Toaster } from 'react-hot-toast'
 import logoImg from '../assets/imgs/logo.svg'
 import remove from '../assets/imgs/delete.svg'
 import check from '../assets/imgs/check.svg'
@@ -46,6 +46,7 @@ export function AdminRoom(){
         const questionRef = await database.ref(`rooms/${roomId}/questions/${questionId}`).update({
             isAnswered: true,
         })
+        toast.success('Questão respondida e finalizada com sucesso!!')
     }
     async function handleHighlightQuestion(questionId: string, isHighLighted: boolean) {
         if(!isHighLighted){
@@ -63,7 +64,7 @@ export function AdminRoom(){
         <div id="page-room">
             <div><Toaster/></div>
             <header>
-                <div className="content">
+                <div className="content admin">
                     <img src={logoImg} alt="Logo letmeask" />
                     <div>
                         <RoomCode code={roomId}/>

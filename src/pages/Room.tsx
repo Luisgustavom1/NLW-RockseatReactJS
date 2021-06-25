@@ -70,7 +70,7 @@ export default function Room(){
                     <RoomCode code={roomId}/>
                 </div>
             </header>
-
+            <div className='row'></div>
             <main>
                 <div className='room-title'>
                     <h1>Sala {title}</h1>

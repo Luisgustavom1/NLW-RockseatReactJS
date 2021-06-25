@@ -39,12 +39,12 @@ export function NewRoom(){
                 <p>Tire as dúvidas da sua audiência em tempo real</p>
             </aside>
             <main>
-                <div className='main-content'>
+                <div className='main-content newRoom'>
                     <img src={logoImg} alt="Imagem logo"/>
                     
                     <div className='user-data'>
                         <h1>{user?.name}</h1>
-                        <p><img src={user?.avatar} alt="" /></p>
+                        <p><img src={user?.avatar} alt="Foto do avatar" /></p>
                     </div>
 
                     <h2>Crie uma nova sala</h2>
