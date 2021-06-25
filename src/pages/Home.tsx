@@ -38,6 +38,10 @@ export function Home(){
             alert('Sala inexistente, verifique o código e tente novamente')
             return;
         }
+        if(roomRef.val().endedAt){
+            alert('A sala ja foi encerrada')
+            return;
+        }
 
         history.push(`/room/${roomCode}`)
     }

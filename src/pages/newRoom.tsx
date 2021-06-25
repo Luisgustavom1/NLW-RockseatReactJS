@@ -41,7 +41,12 @@ export function NewRoom(){
             <main>
                 <div className='main-content'>
                     <img src={logoImg} alt="Imagem logo"/>
-                    <h1>{user?.name}</h1>
+                    
+                    <div className='user-data'>
+                        <h1>{user?.name}</h1>
+                        <p><img src={user?.avatar} alt="" /></p>
+                    </div>
+
                     <h2>Crie uma nova sala</h2>
                     <form action="" onSubmit={handleCreateRoom}>
                         <input type="text" placeholder='Nome da sala' value={newRoom} onChange={e => setNewRoom(e.target.value)}/>

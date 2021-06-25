@@ -9,6 +9,15 @@
         width: 100px;
         max-height: 45px;
     }
+
+    div{
+        display: flex;
+        gap: 16px;
+
+        button{
+            height: 40px;
+        }
+    }
 }
 #page-room{
     main{
@@ -92,6 +101,9 @@
                     }
                 }
             }
+        }    
+        .question-list{
+            margin-top: 30px;
         }
     }
 }
