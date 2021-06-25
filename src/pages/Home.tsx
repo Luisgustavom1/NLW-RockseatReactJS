@@ -50,8 +50,10 @@ export function Home(){
         <div id='page-auth'>
             <aside>
                 <img src={illustrationImg} alt="Imagem de ilustração"/>
-                <strong>Toda pergunta tem uma resposta</strong>
-                <p>Tire as dúvidas da sua audiência em tempo real</p>
+                {/* <div> */}
+                    <strong>Toda pergunta tem uma resposta</strong>
+                    <p>Tire as dúvidas da sua audiência em tempo real</p>
+                {/* </div> */}
             </aside>
             <main>
                 <div className='main-content'>
