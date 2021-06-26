@@ -91,7 +91,9 @@ export default function Room(){
                     </div>
                 </form>
                 <div className='question-list'>
-                    {questions.map(question => {
+                    {questions.sort(  (a, b) =>
+                    (a.likeCount > b.likeCount) ? -1 : ((a.likeCount < b.likeCount) ? 1 : 0)
+                    ).map(question => {
                         return(
                             <Question 
                             key={question.id}
