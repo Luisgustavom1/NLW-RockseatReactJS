@@ -66,7 +66,7 @@ export default function Room(){
             <div><Toaster/></div>
             <header>
                 <div className="content">
-                    <img src={logoImg} alt="Logo letmeask" />
+                    <a href="/"><img src={logoImg} alt="Logo letmeask" /></a>
                     <RoomCode code={roomId}/>
                 </div>
             </header>

@@ -65,7 +65,7 @@ export function AdminRoom(){
             <div><Toaster/></div>
             <header>
                 <div className="content admin">
-                    <img src={logoImg} alt="Logo letmeask" />
+                    <a href="/"><img src={logoImg} alt="Logo letmeask" /></a>
                     <div>
                         <RoomCode code={roomId}/>
                         <Button isOutlined onClick={() => {handleEndRoom()}}>Encerrar sala</Button>
